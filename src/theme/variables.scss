@@ -1,5 +1,36 @@
+
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
+/** Ionic CSS Variables **/
+@font-face {
+  font-family: AppFont;
+  font-style: normal;
+  font-weight: lighter;
+   src: url("../assets/fonts/open sans/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: AppFont;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/open sans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: AppFont;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/open sans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: AppFont;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/open sans/OpenSans-Bold.ttf");
+}
+$font-family-ios-base: "AppFont"!important;
+$font-family-md-base: "AppFont"!important;
+$font-family-wp-base: "AppFont"!important;
+
+
 
 /** Ionic CSS Variables **/
 :root {

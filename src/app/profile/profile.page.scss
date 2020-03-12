@@ -1,0 +1,152 @@
+// %%%%%%%%%%%%%%
+// nav styling
+// %%%%%%%%%%%%%%
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 360px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+* {
+    margin: 0;
+    //padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    background: var(--light-color);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Staatliches', cursive;
+    /* changes here */
+    margin-bottom: .55rem;
+    line-height: 1.3
+}
+
+/* Utility */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* Navigation */
+#main-nav {
+    background: #673AB7;
+    /* changes here */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    //height: 50px;
+}
+
+#main-nav .container {
+    display: grid;
+    align-items: center;
+}
+
+#main-nav .logo {
+    /* changes here */
+    width: 50px;
+    margin-right: 5px;
+    /* margin:45px;
+    padding: 30px; */
+    color: #673AB7;
+}
+
+#main-nav ul {
+    justify-self: center;
+    display: flex;
+    
+  }
+
+  #main-nav ul li a.current {
+    //background: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1px;
+}
+
+// %%%%%%%%%%%%%%%%%%%%
+// main profile styling
+// %%%%%%%%%%%%%%%%%%%%
+
+.container {
+    width: 100%;
+    height:100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 17px;
+    padding-left: 17px;
+    overflow: scroll;
+}
+
+.container .profileinfo {
+    width: 100%;
+    border-bottom-width: 0.5rem;
+    border-top-width: 0.5rem;
+    border-bottom-color: rgba(0,0,0,0.17);
+    border-top-color: rgba(0,0,0,0.17);
+}
+
+.container .profileinfo .profilelinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    border-bottom-width: 0.5;
+    border-top-width: 0.5;
+    border-top-width: 0.5;
+    border-bottom-color: rgba(0,0,0,0.17);
+    border-top-color: rgba(0,0,0,0.17);
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+.profileinfo .profilelinks .profiletext {
+    margin-left: 15px;
+    color: rgba(0,0,0,0.5);
+}
+
+.profileinfo .profilelinks .profileforward {
+    color: rgba(0,0,0,0.3);
+    margin-left: 5px;
+}
+
+.container .profilerating {
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .profilerating .profilepic .profilename {
+    color: rgba(0,0,0,0.7);
+    font-weight: bold;
+}
+
+.container .profilerating .profilepic {
+    justify-content: center;
+}

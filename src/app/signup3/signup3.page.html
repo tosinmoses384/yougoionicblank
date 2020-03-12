@@ -1,0 +1,88 @@
+<ion-content>
+
+<ion-grid>
+
+  
+
+<ion-row>
+    <div class="image-container">
+      <img src="../../assets/icon/logo.png" alt="" class="login-image">
+    </div>
+  </ion-row>
+    
+  <ion-row >
+    <h1 class="header-text second-row-text" style="width:100%; text-align:center">SIGN IN</h1>
+  </ion-row>
+
+ <div class="input-block">
+
+   <ion-row >
+        <ion-item style="width:100%">
+          <ion-label position="floating" class="label">Phone Number/Email</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+  </ion-row>
+
+  <ion-row >
+    <ion-item style="width:100%" >
+      <ion-label class="label" position="floating">Password</ion-label>
+      <ion-input [type]="passwordType"></ion-input>
+      <ion-icon class="eye-icon" [name]="passwordIcon" (click)='hideShowPassword()' slot="end"></ion-icon>
+    </ion-item>
+    <h4 class="reset-text">Forgot Password?</h4>
+  </ion-row>
+
+ </div>
+  
+  <ion-row>
+    <div class="button-container">
+      <button class="button">Sign in</button>
+      <p class="footer-text">Already have an Account?<span class="footer-link" [routerLink]="['/login']">Sign In</span></p>
+    </div>
+  </ion-row>
+
+</ion-grid>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>signup3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->

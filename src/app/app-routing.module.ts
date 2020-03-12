@@ -4,6 +4,42 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  {
+    path: 'signin',
+    loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'car-info',
+    loadChildren: () => import('./car-info/car-info.module').then( m => m.CarInfoPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'signup2',
+    loadChildren: () => import('./signup2/signup2.module').then( m => m.Signup2PageModule)
+  },
+  {
+    path: 'signup3',
+    loadChildren: () => import('./signup3/signup3.module').then( m => m.Signup3PageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signupgrid1',
+    loadChildren: () => import('./signupgrid1/signupgrid1.module').then( m => m.Signupgrid1PageModule)
+  },
+  {
+    path: 'home1',
+    loadChildren: () => import('./home1/home1.module').then( m => m.Home1PageModule)
+  },
 ];
 
 @NgModule({

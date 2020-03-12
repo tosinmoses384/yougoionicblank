@@ -1,0 +1,105 @@
+<ion-content>
+
+  <div class="container">
+
+    <div class="image-container">
+        <img class="login-image" src="../../assets/icon/logo.png">
+    </div>
+
+    <h1 class="header-text">SIGN IN</h1>
+    
+    <div class="input-block">
+      
+      <ion-item class="ion-no-padding">
+        <ion-label class="label" position="floating">Phone Number/Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item class="ion-no-padding">
+        <ion-label class="label" position="floating">Password</ion-label>
+        <ion-input [type]="passwordType" style="margin-left:0"></ion-input>
+        <ion-icon class="eye-icon" [name]="passwordIcon" (click)='hideShowPassword()' slot="end"></ion-icon>
+      </ion-item>
+
+    </div>
+
+    <div class="button-container">
+      <button class="button">Sign in</button>
+      <p class="footer-text">Already have an Account?<span class="footer-link" [routerLink]="['/login']">Sign In</span></p>
+    </div>
+
+  </div>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>signin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+
+
+<!-- <div class="container">
+  <form class="form" id="form">
+      <div class="image"><img src="../../assets/icon/logo.png" alt="image"></div>
+      <h2>SIGN IN</h2>
+      <div class="form-control">
+          <label for="signincode">Phone Number/ Email</label>
+          <input type="text" id="signincode">
+          <small>Error message</small>
+      </div>
+
+      
+      <div class="form-control">
+          <img  src="../../assets/icon/hide.png" class="image-eye" id="right-here"  alt="image">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+          <label class="passwordlabel" for="password">Forgot password?</label>
+          <small>Error message</small>
+      </div>
+
+      <div class ="form-control" >
+      <button type="submit">Sign In</button>
+      <label class="last" for="account">Don't Have an account? <a href="#">Book a spot</a></label>
+        </div>
+  </form>
+</div> -->
