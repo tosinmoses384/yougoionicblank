@@ -1,152 +1,167 @@
-// %%%%%%%%%%%%%%
-// nav styling
-// %%%%%%%%%%%%%%
-:root {
-    --primary-color: #c72727;
-    --secondary-color: #f99500;
-    --light-color: #f3f3f3;
-    --dark-color: #333;
-    --max-width: 360px;
-}
+// %%%%%%%%%%%%%%%%%%%%%%%
+//  HEADER CONFIGURATION
+// %%%%%%%%%%%%%%%%%%%%%%
 
-.category {
-    --sports-color: #f99500;
-    --ent-color: #a66bbe;
-    --tech-color: #009cff;
-}
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
 
-* {
-    margin: 0;
-    //padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1;
-    background: var(--light-color);
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Staatliches', cursive;
-    /* changes here */
-    margin-bottom: .55rem;
-    line-height: 1.3
-}
-
-/* Utility */
-.container {
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
-/* Navigation */
-#main-nav {
-    background: #673AB7;
-    /* changes here */
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    //height: 50px;
-}
-
-#main-nav .container {
-    display: grid;
-    align-items: center;
-}
-
-#main-nav .logo {
-    /* changes here */
-    width: 50px;
-    margin-right: 5px;
-    /* margin:45px;
-    padding: 30px; */
-    color: #673AB7;
-}
-
-#main-nav ul {
-    justify-self: center;
-    display: flex;
+    /* I ADDED THIS */
+  text-align: center; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
+ }
+
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
   }
 
-  #main-nav ul li a.current {
-    //background: var(--primary-color);
-    color: #fff;
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+
+  .button-text{
+      display: none;
+  }
+
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }
+
+
+  /* I ALSO ADDED THIS */
+  .toolbar-container ion-title {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
     font-size: 17px;
-    line-height: 1px;
-}
+    //line-height: 1px;    
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
 
-// %%%%%%%%%%%%%%%%%%%%
-// main profile styling
-// %%%%%%%%%%%%%%%%%%%%
+//   %%%%%%%%%%%%%%%%%
+//     MAIN CONTENT
+//   %%%%%%%%%%%%%%%%%
 
-.container {
+ion-content .top-div {
+    border: 1px dashed red;
     width: 100%;
-    height:100%;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-right: 17px;
-    padding-left: 17px;
-    overflow: scroll;
+    height: 100%;
 }
 
-.container .profileinfo {
-    width: 100%;
-    border-bottom-width: 0.5rem;
-    border-top-width: 0.5rem;
-    border-bottom-color: rgba(0,0,0,0.17);
-    border-top-color: rgba(0,0,0,0.17);
+img.img {
+    border: 1px dashed red;
+    width: 120px;
+    height: 120px;
 }
 
-.container .profileinfo .profilelinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-self: center;
-    width: 100%;
-    border-bottom-width: 0.5;
-    border-top-width: 0.5;
-    border-top-width: 0.5;
-    border-bottom-color: rgba(0,0,0,0.17);
-    border-top-color: rgba(0,0,0,0.17);
-    padding-bottom: 14px;
-    padding-top: 14px;
-}
-
-.profileinfo .profilelinks .profiletext {
-    margin-left: 15px;
-    color: rgba(0,0,0,0.5);
-}
-
-.profileinfo .profilelinks .profileforward {
-    color: rgba(0,0,0,0.3);
-    margin-left: 5px;
-}
-
-.container .profilerating {
-    width: 50%;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.container .profilerating .profilepic .profilename {
-    color: rgba(0,0,0,0.7);
+h1.first-h1 {
+    //border: 1px dashed red;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
+    font-size: 17px;
+    //line-height: 1px;
+    //display: flex;
+    //align-items: center;
+    text-align: center;
+    //letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
-.container .profilerating .profilepic {
-    justify-content: center;
+h1.second-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    //line-height: 28px;
+    color: #00E217;
+    margin-bottom: 10px;
+
 }
+
+p.p1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #383838;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p.p2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #4C4C4C;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+h1.third-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+p.p3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    //line-height: 13px;
+    color: #383838;
+}
+
+
+.top-div .header-div {
+    border: 1px dashed red;
+    display: flex;
+    height: 180px;
+}
+  
+ .top-div .header-div .div-1 {
+    border: 1px dashed red;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+ .top-div .header-div .div-2 {
+    border: 1px dashed red;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+  
