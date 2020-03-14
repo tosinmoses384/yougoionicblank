@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'home3',
     loadChildren: () => import('./home3/home3.module').then( m => m.Home3PageModule)
   },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
 
 ];
 
