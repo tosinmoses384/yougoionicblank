@@ -16,7 +16,7 @@
 
 
 
-     <div style="width:100%; padding: 0 15px; border: 1px dashed red;">
+     <div style="border: 1px dashed red; width:100%; padding: 0 15px; ">
          <ion-card  style="position:absolute; margin: 0; display: flex; flex-direction: column; top: 25%; left: 7%;width: 325px;max-width: 100%; margin:0; display:flex; flex-direction:  column; border: 1px dashed red;">
 
            <ion-icon (click)="presentPopover($event)" name="ellipsis-horizontal" style="border: 1px dashed red; font-size: 25px; position: absolute; right: 15px; top: 5px;"></ion-icon>
@@ -39,13 +39,13 @@
                  </div>
             </div>
 
-                <div (click) = "show()" id="open" style="width:100%; display:flex; justify-content: space-between; flex-direction: row; border-bottom: 1px solid rgba(0,0,0,0.4)">
+                <div (click) = "show()" id="open" style="width:100%; display:flex; justify-content: space-between; flex-direction: row; border-bottom: 1px solid rgba(0,0,0,0.4); border-bottom: 1px dashed red;">
                    <p style="margin:25px 0px 25px 15px; font-size:15px; font-weight: bold; color: #000000;" >Wallet</p>
                    <ion-icon style="margin:25px 15px 25px 0px; font-size:17px; font-weight: bold; color: #000000;" name="chevron-forward-outline"></ion-icon>
                 </div>
 
                     <!-- display none here for the div with id show -->
-                <div id="show" style="width:100%; display: none; border-bottom: 1px solid rgba(0,0,0,0.4)">
+                <div id="show" style="width:100%; border-bottom: 1px solid rgba(0,0,0,0.4)">
                    <div style="padding-bottom:0;">
                       <p style="font-size:15px">Balance</p>
                       <p style="font-size:15px">N350,000.00</p>
@@ -67,7 +67,7 @@
                 </div>
 
                   <!-- display none here for the div with id view-->
-                <div  id="view" style="display:none; width:100%; border-bottom: 1px solid rgba(0,0,0,0.4)">
+                <div  id="view" style=" width:100%; border-bottom: 1px solid rgba(0,0,0,0.4)">
                  <div style="padding-bottom:0; border-bottom:1px solid rgba(0,0,0,0.3)">
                     <p style=" margin-left:15px; font-weight:bold; font-size:15px">Report an Issue</p>
                  </div>

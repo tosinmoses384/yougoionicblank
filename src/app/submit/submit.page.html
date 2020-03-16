@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="toolbar-container">
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/profile']" defaultHref="notification-summary" color="light"
+        style="--icon-margin-start:8px; --icon-font-size:26px" text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Submit Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item class="ion-item-empty"></ion-item>
+
+  <ion-item>
+    <div class="ion-item-div">
+      <img src="../../assets/feedback-icon.png" alt="">
+    </div>
+  </ion-item>
+
+  <ion-item class="ion-item-empty"></ion-item>
+
+  <ion-item>
+    <div class="ion-item-div-h1">
+      <h1>Have any Recommendations/Complaints?</h1>
+    </div>
+  </ion-item>
+
+  <ion-item class="ion-item-empty"></ion-item>
+
+  <ion-list>
+    <ion-item class="title-margin">
+      <ion-label class="label" position="floating">Title</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-item-empty"></ion-item>
+
+    <ion-item class="message-margin">
+      <ion-label class="label" position="floating">Compose Message</ion-label>
+      <ion-input style="padding: 0px!important;"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item class="ion-item-empty"></ion-item>
+
+  <ion-grid class="label" style="position: fixed; padding:10px; bottom:5px; width:100%;">
+  <ion-row>
+    <button class="button" [routerLink]="['/profile']">Submit</button>
+  </ion-row>
+  </ion-grid>
+
+
+</ion-content>

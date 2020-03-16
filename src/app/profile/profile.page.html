@@ -38,7 +38,7 @@
                 </div>
 
                 <!-- display none here for the div with class car-info-div-detail  -->
-                <div style=" display: none;" class="car-info-div-detail">
+                <div style="display: none;" class="car-info-div-detail">
 
                     <div class="car-info-div-detail-text">
                         <h1 class="cartype-h1">type/category</h1>
@@ -60,15 +60,90 @@
                     <ion-icon class="chevron-forward-outline-1" name="chevron-forward-outline"></ion-icon>
                 </div>
 
-                <!-- display none here for the div with class car-info-div-detail  -->
-                <ion-card class="car-history-div-detail">
+                <!-- display none here for the div with class car-history-div-detai  -->
+                <ion-card style="display: none;" class="car-history-div-detail">
 
-                    <div class="ridetake">
-                        <h1>Rides Taking</h1>
+                    <div class="ridetake a">
+                        <h1>Rides Taken</h1>
                         <h2>250</h2>
                     </div>
 
+                    <div class="ridetake b">
+                        <h1>Ride Cancelled</h1>
+                        <h2>0</h2>
+                    </div>
+
+                    <div class="ridetake c">
+                        <h1>Rides not Completed</h1>
+                        <h2>0</h2>
+                    </div>
+
+                    <div class="ridetake d">
+                        <h1>Ride Failed</h1>
+                        <h2>0</h2>
+                    </div>
+
+                    <div class="ridetake e">
+                        <h1>Ride Reported</h1>
+                        <h2>0</h2>
+                    </div>
+
+                    <div class="ridetake f">
+                        <h1>Ride Rated</h1>
+                        <h2>250</h2>
+                    </div>
+
+                    <div class="ridetake g">
+                        <h1>Accidents Incurred</h1>
+                        <h2>0</h2>
+                    </div>
+
                 </ion-card>
+
+                <div class="car-info-div">
+                    <ion-icon class="chatbox-outline" name="chatbox-outline"></ion-icon>
+                    <p>Submit Feedback</p>
+                    <ion-icon class="chevron-forward-outline-1" name="chevron-forward-outline"></ion-icon>
+                </div>
+
+                <!-- display none here for the div with class car-history-div-detai  -->
+                <div style="display: none;">
+                  
+                    <ion-item>
+                      <div class="ion-item-div-h1">
+                        <h1>Have any Recommendations/Complaints?</h1>
+                      </div>
+                    </ion-item>
+                  
+                    <ion-list>
+                      <ion-item class="title-margin">
+                        <ion-label class="label" position="floating">Title</ion-label>
+                        <ion-input></ion-input>
+                      </ion-item>
+                  
+                      <ion-item class="message-margin">
+                        <ion-label class="label" position="floating">Compose Message</ion-label>
+                        <ion-input style="padding: 0px!important;"></ion-input>
+                      </ion-item>
+                    </ion-list>
+                  
+                    <!-- <ion-item class="ion-item-empty"></ion-item> -->
+                  
+                    <ion-grid class="label" style="padding:10px; bottom:5px; width:100%;">
+                    <ion-row>
+                      <button class="button" [routerLink]="['/profile']">Submit</button>
+                    </ion-row>
+                    </ion-grid>
+                  
+                  </div>
+
+                  <div class="car-info-div">
+                    <ion-icon class="alert-circle-outline" name="alert-circle-outline"></ion-icon>
+                    <p>FAQ</p>
+                    <ion-icon class="chevron-forward-outline-1" name="chevron-forward-outline"></ion-icon>
+                </div>
+
+               
 
                 
 

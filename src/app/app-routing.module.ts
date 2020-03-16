@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'inbox',
     loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
   },
+  {
+    path: 'submit',
+    loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
+  },
 
 ];
 
