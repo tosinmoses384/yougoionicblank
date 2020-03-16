@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'submit',
     loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
   },
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  },
 
 ];
 

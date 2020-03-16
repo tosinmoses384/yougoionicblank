@@ -1,0 +1,197 @@
+// %%%%%%%%%%%%%%%%%%%%%%%
+//  HEADER CONFIGURATION
+// %%%%%%%%%%%%%%%%%%%%%%
+
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+
+    /* I ADDED THIS */
+  text-align: center; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+    
+ }
+
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
+  }
+
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+
+  .button-text{
+      display: none;
+  }
+
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }
+
+
+  /* I ALSO ADDED THIS */
+  .toolbar-container ion-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    //line-height: 1px;    
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+
+  /* ion-icon name=search */
+  .toolbar-container ion-icon {
+    //border: 1px dashed red;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+
+   
+// %%%%%%%%%%
+//   CONTENT
+// %%%%%%%%%%%
+// ion-card .content {
+//     //border: 1px dashed red;
+// }
+
+// ion-content.content ion-card.card {
+//     border: 1px dashed red;
+// }
+
+// .card .card-content {
+//     border: 1px dashed red;
+// }
+
+.card-content .div-content {
+    //border: 1px dashed red;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+    border-radius: 7px;
+    width: 300px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-content .bank-transfer {
+    //border: 1px dashed red;
+    width: 49%;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+
+}
+
+.div-content .cash {
+    //border: 1px dashed red;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+
+
+
+}
+
+/* div-content */
+.bank-transfer h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    //display: flex;
+    //align-items: center;
+    color: #000000;
+}
+
+.bank-transfer p,
+.bank-transfer h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #000000;
+}
+
+.bank-transfer p span,
+.bank-transfer h2 span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #727272;
+}
+
+.cash h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #000000;
+}
+
+.cash h2 span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #727272;
+}
+
+.cash p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #000000;
+}
+
+.cash p span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #727272;
+}
+
+.cash h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    //line-height: 28px;
+    //text-align: center;
+    color: #673AB7;
+}
+

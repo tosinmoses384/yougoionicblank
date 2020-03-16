@@ -1,9 +1,85 @@
-.profile-con>p{
-    margin:0;
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+ }
+
+ ion-card.ios{
+     margin:0 15px;
+     box-shadow: none;
+     border-bottom: 1px solid rgba(0,0,0,0.4);
+     height:80px;
+     border-radius:0.1px;
+     outline: none;
+ }
+
+ .notify-text{
+     margin-left: 27px;
+     color:#8c8c8c;
+     font-size:13px; 
+     width:92%;
+ }
+
+ ion-card.paddingDiv:focus {
+     outline-color: transparent;
+     outline-style: none;
+     outline-width: 0px;
+     
+   }
+
+   // %%%%%%%%%%%%%%%%%%%%%%%
+//  HEADER CONFIGURATION
+// %%%%%%%%%%%%%%%%%%%%%%
+
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+
+    /* I ADDED THIS */
+  text-align: center; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+    
+ }
+
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
   }
-  #show>div{
-      display:flex;
-      flex-direction:row;
-      justify-content:space-between;
-      padding:5px 15px
+
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+
+  .button-text{
+      display: none;
+  }
+
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }
+
+
+  /* I ALSO ADDED THIS */
+  .toolbar-container ion-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    //line-height: 1px;    
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
   }
