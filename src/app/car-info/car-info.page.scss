@@ -54,3 +54,222 @@
     color: #FFFFFF;
   }
 
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//   car-info-div-detail(car-info page)
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ion-content .car-info-div-detail {
+  border: 1px dashed red;
+  display: flex;
+  
+}
+
+.car-info-div-detail .car-info-div-detail-text {
+  border: 1px dashed red;
+  width: 300px;
+  margin-right: 0px;
+  padding-left: 7px;
+}
+
+.car-info-div-detail img {
+  border: 1px dashed red;
+  width: 230px;
+  height: 157px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+
+.car-info-div-detail-text h1.cartype-h1 {
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    //line-height: 28px;
+    //display: flex;
+    //align-items: center;
+    //text-align: right;
+    color: #673AB7;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5px;
+
+}
+
+.car-info-div-detail-text .sedantype-p {
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    //line-height: 28px;
+    //display: flex;
+    //align-items: center;
+    //text-align: right;
+    color: #212121;
+    margin-top: 1px;
+    margin-bottom: 0.5rem;
+
+}
+
+.car-info-div-detail-text .brand-h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #673AB7;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+
+.car-info-div-detail-text .toyota-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #212121;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 1px;
+}
+
+.car-info-div-detail-text .year-h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #673AB7;
+  margin-bottom: 0px;
+
+}
+
+.car-info-div-detail-text .year-figure-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #212121;
+  margin-top: 0px;
+
+}
+
+.car-info-div-detail-text .color-h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #673AB7;
+  margin-bottom: 0px;
+}
+
+.car-info-div-detail-text .red-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #212121;
+  margin-top: 0px;
+}
+
+  // %%%%%%%%%%%%%%%%%%%
+//    RIDE HISTORY
+// %%%%%%%%%%%%%%%%%%%
+.father-ion-card .car-history-div-detail {
+  //border: 1px dashed red;
+  width: 95%;
+  //max-height: 100px;
+  height: 441px;
+  margin-right: 3px;
+  overflow: scroll;
+}
+
+.car-history-div-detail .ridetake.a,
+.car-history-div-detail .ridetake.c,
+.car-history-div-detail .ridetake.e,
+.car-history-div-detail .ridetake.g{
+  border: 1px dashed red;
+  //height: 100% inherit;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #EAEAEA;
+  padding-left: 7px;
+  padding-right: 7px;
+  
+}
+
+.car-history-div-detail .ridetake.b,
+.car-history-div-detail .ridetake.d,
+.car-history-div-detail .ridetake.f{
+  border: 1px dashed red;
+  //height: 100% inherit;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);    
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.ridetake.a h2,
+.ridetake.b h2,
+.ridetake.c h2,
+.ridetake.d h2,
+.ridetake.e h2,
+.ridetake.f h2,
+.ridetake.g h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  //color: #212121;
+
+}
+
+.ridetake.a h1,
+.ridetake.b h1,
+.ridetake.c h1,
+.ridetake.d h1,
+.ridetake.e h1,
+.ridetake.f h1,
+.ridetake.g h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  //line-height: 28px;
+  //display: flex;
+  //align-items: center;
+  //text-align: right;
+  color: #673AB7;
+}
+
