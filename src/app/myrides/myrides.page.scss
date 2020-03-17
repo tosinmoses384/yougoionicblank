@@ -1,0 +1,219 @@
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+    text-align: center;
+ }
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
+  }
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+  .button-text{
+      display: none;
+  }
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }
+
+//   %%%%%%%%%%
+//    CONTENT
+//   %%%%%%%%%%%
+ion-content {
+    //border: 1px dashed red;
+    background: #EAEAEA;
+}
+
+ion-content ion-item {
+    //border: 1px dashed red;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+}
+
+ion-item h1.first-h1 {
+    //border: 1px dashed red;
+    padding-right: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    //line-height: 18px;
+    //text-align: center;
+    //letter-spacing: -0.165px;
+    color: rgba(0, 0, 0, 0.69);
+    
+    /*THE BORDER STYLE*/
+    // border-bottom-color: rgba(0, 0, 0, 0.69);
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+ion-item h1.second-h1 {
+    //border: 1px dashed red;
+    padding-left: 1.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    //line-height: 18px;
+    //text-align: center;
+    //letter-spacing: -0.165px;
+    color: rgba(0, 0, 0, 0.69);
+
+    /*THE BORDER STYLE*/
+    border-bottom-color: rgba(0, 0, 0, 0.69);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    padding-bottom: 7px;
+}
+
+ion-content ion-card {
+    //border: 1px dashed red;
+}
+
+ion-card ion-card-content {
+    //border: 1px dashed red;
+    display: flex;
+    width: 350px;
+}
+
+ion-card-content .image-container {
+    //border: 1px dashed red;
+    margin-bottom: 0px;
+    // padding-bottom: 0px;
+
+
+}
+
+.image-container img {
+    //border: 1px dashed red;
+    width: 87px;
+    height: 100px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.image-container h1 {
+    //border: 1px dashed red;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    color: #000000;
+    margin-top: 1rem;
+
+}
+
+.text-container .date-completed {
+    //border: 1px dashed red;
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: space-between;
+} 
+
+ion-card-content .text-container {
+    //border: 1px dashed red;
+    padding-top: 1px;
+    padding-left: 5px;
+
+
+}
+
+.date-completed h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;   
+    font-size: 11px;
+    // line-height: 18px;
+    // letter-spacing: -0.165px;
+    color: #000000;
+}
+
+.date-completed h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    // line-height: 18px;
+    // text-align: center;
+    // letter-spacing: -0.165px;
+    color: #1EA61E;
+
+}
+
+.text-container .other-info {
+    //border: 1px dashed red;
+    margin-left: 3.2px;
+}
+
+.other-info .one {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    // line-height: 18px;
+    // text-align: center;
+    // letter-spacing: -0.165px;
+    color: #000000;
+
+}
+
+.other-info .two {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    // line-height: 18px;
+    // letter-spacing: -0.165px;
+    color: #000000;
+}
+
+other-info .three {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    // line-height: 18px;
+    // text-align: center;
+    // letter-spacing: -0.165px;
+    color: #000000;
+}
+
+other-info .four {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    // line-height: 18px;
+    // letter-spacing: -0.165px;
+    color: #000000;
+
+}
+
+other-info .five,
+other-info .six {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    // line-height: 18px;
+    // letter-spacing: -0.165px;
+    color: #000000
+} 
+
+
+

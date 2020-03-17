@@ -67,6 +67,10 @@ const routes: Routes = [
     path: 'delete-modal',
     loadChildren: () => import('./delete-modal/delete-modal.module').then( m => m.DeleteModalPageModule)
   },
+  {
+    path: 'myrides',
+    loadChildren: () => import('./myrides/myrides.module').then( m => m.MyridesPageModule)
+  },
 
 ];
 
