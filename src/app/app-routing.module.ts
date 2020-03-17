@@ -59,6 +59,14 @@ const routes: Routes = [
     path: 'payment',
     loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
   },
+  {
+    path: 'notification-detail',
+    loadChildren: () => import('./notification-detail/notification-detail.module').then( m => m.NotificationDetailPageModule)
+  },
+  {
+    path: 'delete-modal',
+    loadChildren: () => import('./delete-modal/delete-modal.module').then( m => m.DeleteModalPageModule)
+  },
 
 ];
 

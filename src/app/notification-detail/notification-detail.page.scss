@@ -1,0 +1,28 @@
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+ }
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
+  }
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+  .button-text{
+      display: none;
+  }
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }

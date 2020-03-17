@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar class="toolbar-container">
+    <ion-buttons slot="start">
+        <ion-back-button [routerLink]="['/homepage/inbox']" defaultHref="notification-summary" color="light" style="--icon-margin-start:8px; --icon-font-size:26px" text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>  
+    <ion-title>Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="inbox-container" style="margin:0px 15px 0px 15px;">
+      <div style="text-align: right; width:100%; border-bottom: 1px solid rgba(0,0,0,0.3);" class="inbox-date-time">
+        <p style="margin:15px 15px 5px 15px;  font-size: 13px; color: #8A8A8A;"> June 24</p>
+        <p style="margin:0px 15px 5px 15px;  font-size: 13px; color: #8A8A8A;">09:57am</p>
+      </div>
+      <div style="text-align: left; width:100%; border-bottom: 1px solid rgba(0,0,0,0.3);" class="inbox-title">
+        <h2 style=" font-size: 21px; color:#717171; font-weight: 500;">Ride Cancelled</h2>
+      </div>
+      <h3 style="font-weight: normal; font-size: 15px;  line-height: 25px; color: #404040;">Please cancel your booking 24 hours before the ride, Any ride cancelled before the 24 hour cancellation window will have no penalty, For cancellations within the 24 hour window note that you will be charged 15% booking cost. Thanks for your cooperation.</h3>
+  </div>
+</ion-content>
