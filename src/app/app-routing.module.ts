@@ -79,6 +79,34 @@ const routes: Routes = [
     path: 'endtrip',
     loadChildren: () => import('./endtrip/endtrip.module').then( m => m.EndtripPageModule)
   },
+  {
+    path: 'logout',
+    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
+  },
+  {
+    path: 'feedbackmodal',
+    loadChildren: () => import('./feedbackmodal/feedbackmodal.module').then( m => m.FeedbackmodalPageModule)
+  },
+  {
+    path: 'delete-notification',
+    loadChildren: () => import('./delete-notification/delete-notification.module').then( m => m.DeleteNotificationPageModule)
+  },
+  {
+    path: 'report-issue',
+    loadChildren: () => import('./report-issue/report-issue.module').then( m => m.ReportIssuePageModule)
+  },
+  {
+    path: 'inputpasswordmodal',
+    loadChildren: () => import('./inputpasswordmodal/inputpasswordmodal.module').then( m => m.InputpasswordmodalPageModule)
+  },
+  {
+    path: 'inputpasswordmodal-retry',
+    loadChildren: () => import('./inputpasswordmodal-retry/inputpasswordmodal-retry.module').then( m => m.InputpasswordmodalRetryPageModule)
+  },
+  {
+    path: 'tokeninput-confirm',
+    loadChildren: () => import('./tokeninput-confirm/tokeninput-confirm.module').then( m => m.TokeninputConfirmPageModule)
+  },
 
 ];
 
