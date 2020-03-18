@@ -71,6 +71,14 @@ const routes: Routes = [
     path: 'myrides',
     loadChildren: () => import('./myrides/myrides.module').then( m => m.MyridesPageModule)
   },
+  {
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FaqPageModule)
+  },
+  {
+    path: 'endtrip',
+    loadChildren: () => import('./endtrip/endtrip.module').then( m => m.EndtripPageModule)
+  },
 
 ];
 

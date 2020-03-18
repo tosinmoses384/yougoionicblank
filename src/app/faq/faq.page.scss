@@ -1,0 +1,118 @@
+// %%%%%%%%%%%%%%%%%%%%%
+//  HEADER CONFIGURATION
+// %%%%%%%%%%%%%%%%%%%%%
+
+.toolbar-container{
+    --background: #673ab7;
+    --color:#ffffff;
+    font-weight: 300;
+    text-align: center;
+ }
+ :root {
+    ion-back-button {
+        --color:#ffffff !important;
+    }
+  }
+  ion-icon.sc-ion-back-button-md , ion-icon.sc-ion-back-button-ios{
+      --color:#ffffff !important;
+  }
+  .button-text{
+      display: none;
+  }
+  ion-icon {
+    --color:#ffffff !important;
+    margin-left: 5px;
+    font-size: 30px
+  }
+  span.button-inner{
+    --color:#ffffff !important;
+    margin-left: 5px;
+  }
+  ion-icon.ios.hydrated{
+    --color:#ffffff !important; 
+  }
+
+//   %%%%%%%%%%%
+//     CONTENT
+//   %%%%%%%%%%%%
+
+// ion-content {
+//     //border: 1px dashed red;
+// }
+
+ion-content .empty-container {
+    //border: 1px dashed red;
+    height: 90px;
+}
+
+ion-icon {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+}
+
+ion-content ion-list {
+    //border: 1px dashed red;
+    height: 360px;
+    overflow: scroll;
+}
+
+ion-list > ion-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ion-list ion-item {
+    //border: 1px dashed red;
+    width: 330px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+ion-item ion-input {
+    //border: 1px dashed red;
+    max-height: 50px!important;
+}
+
+ion-item .label1,
+ion-item .label2,
+ion-item .label3,
+ion-item .label4,
+ion-item .label5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    //line-height: 1px;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    // letter-spacing: 0.01em;
+    color: rgba(103, 58, 183, 0.7);
+}
+
+ion-list .hidden1 {
+    //border: 1px dashed red;
+    //width: 250px;
+    background: #EAEAEA;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.hidden1 h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    //line-height: 24px;
+    //display: flex;
+    //align-items: center;
+    //letter-spacing: 0.01em;
+    color: #525252;
+
+}
