@@ -111,6 +111,10 @@ const routes: Routes = [
     path: 'tokensuccess-modal',
     loadChildren: () => import('./tokensuccess-modal/tokensuccess-modal.module').then( m => m.TokensuccessModalPageModule)
   },
+  {
+    path: 'resetpassword-modal',
+    loadChildren: () => import('./resetpassword-modal/resetpassword-modal.module').then( m => m.ResetpasswordModalPageModule)
+  },
 
 ];
 
