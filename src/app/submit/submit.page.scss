@@ -58,9 +58,9 @@
 // ION-ICON IMG
 //   %%%%%%%%%%%%%%%
 
-ion-content {
-    border: 1px dashed red;
-}
+// ion-content {
+//     //border: 1px dashed red;
+// }
 
 // ion-item {
 //     //border: 1px dashed red;
@@ -69,12 +69,12 @@ ion-content {
 
 /* EMPTY SPACE */
 ion-item.ion-item-empty {
-    border: 1px dashed red;
+    //border: 1px dashed red;
     max-height: 25px;
 }
 
 ion-item .ion-item-div {
-    border: 1px dashed red;
+    //border: 1px dashed red;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -82,16 +82,16 @@ ion-item .ion-item-div {
     margin-bottom: 7px;
 }
 
-ion-item img {
-    border: 1px dashed red;
-    //background: #673AB7;
-}
+// ion-item img {
+//     //border: 1px dashed red;
+//     //background: #673AB7;
+// }
 
 //   %%%%%%%%%%%%%%%
 // MIDDLE H1
 //   %%%%%%%%%%%%%%%
 ion-item .ion-item-div-h1 {
-    border: 1px dashed red;
+    //border: 1px dashed red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ ion-item .ion-item-div-h1 {
 
 ion-input {
     width: 339px;
-    border: 1px dashed red;
+    //border: 1px dashed red;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     margin-top: 0px!important;
     margin-bottom: 0px!important;

@@ -58,20 +58,20 @@
 //   car-info-div-detail(car-info page)
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ion-content .car-info-div-detail {
-  border: 1px dashed red;
+  //border: 1px dashed red;
   display: flex;
   
 }
 
 .car-info-div-detail .car-info-div-detail-text {
-  border: 1px dashed red;
+  //border: 1px dashed red;
   width: 300px;
   margin-right: 0px;
   padding-left: 7px;
 }
 
 .car-info-div-detail img {
-  border: 1px dashed red;
+  //border: 1px dashed red;
   width: 230px;
   height: 157px;
   margin-right: 0px;
@@ -80,7 +80,7 @@ ion-content .car-info-div-detail {
 }
 
 .car-info-div-detail-text h1.cartype-h1 {
-  font-family: Roboto;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -95,7 +95,7 @@ ion-content .car-info-div-detail {
 }
 
 .car-info-div-detail-text .sedantype-p {
-  font-family: Roboto;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -208,7 +208,7 @@ ion-content .car-info-div-detail {
 .car-history-div-detail .ridetake.a,
 .car-history-div-detail .ridetake.c,
 .car-history-div-detail .ridetake.e,
-.car-history-div-detail .ridetake.g{
+.car-history-div-detail .ridetake.g {
   border: 1px dashed red;
   //height: 100% inherit;
   height: 55px;

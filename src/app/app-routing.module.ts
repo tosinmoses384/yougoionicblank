@@ -107,6 +107,10 @@ const routes: Routes = [
     path: 'tokeninput-confirm',
     loadChildren: () => import('./tokeninput-confirm/tokeninput-confirm.module').then( m => m.TokeninputConfirmPageModule)
   },
+  {
+    path: 'tokensuccess-modal',
+    loadChildren: () => import('./tokensuccess-modal/tokensuccess-modal.module').then( m => m.TokensuccessModalPageModule)
+  },
 
 ];
 
