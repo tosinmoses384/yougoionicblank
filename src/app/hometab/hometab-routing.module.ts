@@ -30,6 +30,16 @@ const routes: Routes = [
           ]
       },
       {
+        path: 'myrides',
+        children:
+          [
+            {
+              path: '',
+              loadChildren: () => import('../myrides/myrides.module').then( m => m.MyridesPageModule)
+            }
+          ]
+      },
+      {
         path: 'payment',
         children:
           [
@@ -49,6 +59,16 @@ const routes: Routes = [
             }
           ]
       },
+      {
+        path: 'logout',
+        children:
+          [
+            {
+              path: '',
+              loadChildren: () => import('../logout/logout.module').then( m => m.LogoutPageModule)
+            }
+          ]
+      }
     ]
   },
   {
