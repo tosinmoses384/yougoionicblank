@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'hometab', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
     path: 'signin',
@@ -43,7 +43,8 @@ const routes: Routes = [
   {
     path: 'home2',
     loadChildren: () => import('./home2/home2.module').then( m => m.Home2PageModule)
-  },  {
+  },
+  {
     path: 'home3',
     loadChildren: () => import('./home3/home3.module').then( m => m.Home3PageModule)
   },
@@ -114,6 +115,10 @@ const routes: Routes = [
   {
     path: 'resetpassword-modal',
     loadChildren: () => import('./resetpassword-modal/resetpassword-modal.module').then( m => m.ResetpasswordModalPageModule)
+  },
+  {
+    path: 'hometab',
+    loadChildren: () => import('./hometab/hometab.module').then( m => m.HometabPageModule)
   },
 
 ];
