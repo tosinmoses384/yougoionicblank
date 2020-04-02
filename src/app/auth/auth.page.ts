@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 import { AuthService } from './auth.service';
+
 
 
 @Component({
@@ -21,4 +23,8 @@ export class AuthPage implements OnInit {
     this.router.navigateByUrl('/hometab/hometab/home');
   }
 
+  onSubmit(form: NgForm) {
+    console.log(form);
+  }
+    
 }
