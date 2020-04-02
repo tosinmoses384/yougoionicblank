@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { AuthGuard } from './auth/auth.guard';
+
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', redirectTo: 'hometab', pathMatch: 'full' },
+  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    canLoad: [AuthGuard]
+  },
   {
     path: 'signin',
     loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
   },
   {
     path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule),
+    canLoad: [AuthGuard]
   },
   {
     path: 'car-info',
@@ -43,13 +48,15 @@ const routes: Routes = [
   {
     path: 'home2',
     loadChildren: () => import('./home2/home2.module').then( m => m.Home2PageModule)
-  },  {
+  },
+  {
     path: 'home3',
     loadChildren: () => import('./home3/home3.module').then( m => m.Home3PageModule)
   },
   {
     path: 'inbox',
-    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule),
+    canLoad: [AuthGuard]
   },
   {
     path: 'submit',
@@ -57,7 +64,8 @@ const routes: Routes = [
   },
   {
     path: 'payment',
-    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule),
+    canLoad: [AuthGuard]
   },
   {
     path: 'notification-detail',
@@ -69,7 +77,8 @@ const routes: Routes = [
   },
   {
     path: 'myrides',
-    loadChildren: () => import('./myrides/myrides.module').then( m => m.MyridesPageModule)
+    loadChildren: () => import('./myrides/myrides.module').then( m => m.MyridesPageModule),
+    canLoad: [AuthGuard]
   },
   {
     path: 'faq',
@@ -114,6 +123,14 @@ const routes: Routes = [
   {
     path: 'resetpassword-modal',
     loadChildren: () => import('./resetpassword-modal/resetpassword-modal.module').then( m => m.ResetpasswordModalPageModule)
+  },
+  {
+    path: 'hometab',
+    loadChildren: () => import('./hometab/hometab.module').then( m => m.HometabPageModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   },
 
 ];
