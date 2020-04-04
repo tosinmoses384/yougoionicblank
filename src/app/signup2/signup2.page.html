@@ -1,7 +1,7 @@
 
 <ion-content>
     <h1 class="first">Kindly provide details below</h1>
-    <ion-item>
+    <ion-item lines="none">
             
             <img class="img-success" src="../../assets/002-success.png" alt="">
             <img class="line-success" src="../../assets/Line 91.png" alt="">
@@ -30,7 +30,7 @@
 
     <ion-grid style="position:fixed; padding:10px; bottom:5px; width:100%">
         <ion-row>
-          <button class="button" [routerLink]="['/signin']">Next</button>
+          <button class="button" (click)="onCreateRegister()">Done</button>
           <p class="footer-text">Already have an Account?<span class="footer-link" [routerLink]="['/signup3']">Sign In</span>
           </p>
         </ion-row>
