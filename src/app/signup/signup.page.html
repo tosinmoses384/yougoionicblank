@@ -37,7 +37,6 @@
 
     <ion-item>
       <ion-label class="label" position="floating">Car Year</ion-label>
-      <!--<ion-input></ion-input>-->
       <ion-select [ngModel]="'2002'" name="guest-number">
         <ion-select-option value="2002">2002</ion-select-option>
         <ion-select-option value="2003">2003</ion-select-option>
@@ -62,7 +61,9 @@
   <ion-grid style="position:fixed; padding:10px; bottom:5px; width:100%">
     <ion-row>
       <!-- <button class="button" [routerLink]="['/signin']">Next</button>-->
-      <button class="button" (click)="onsignupmodal">Next</button>
+      <button class="button" [routerLink]="['/signup2']">
+        Next
+      </button>
       <p class="footer-text">Already have an Account?<span class="footer-link" [routerLink]="['/auth']">Sign In</span>
       </p>
     </ion-row>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-signupgrid1',
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class Signupgrid1Page implements OnInit {
   form: FormGroup;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -17,7 +18,7 @@ export class Signupgrid1Page implements OnInit {
         updateOn: 'blur',
         validators: [Validators.required]
       }),
-      driverlicense: new FormControl(null, {
+      driverlicence: new FormControl(null, {
         updateOn: 'blur',
         validators: [Validators.required, Validators.min(1)]
       }),
@@ -35,9 +36,74 @@ export class Signupgrid1Page implements OnInit {
       carownerphone: new FormControl(null, {
         updateOn: 'blur',
         validators: [Validators.required, Validators.maxLength(15)]
+      }),
+      cartype: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
+      }),
+      carbrand: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
+      }),
+      carmodel: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
+      }),
+      caryear: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
+      }),
+      carplatenumber: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required, Validators.maxLength(15)]
+      }),
+      carcolor: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
+      }),
+      password: new FormControl(null, {
+        updateOn: 'blur',
+        validators: [Validators.required]
       })
     });
   }
+
+
+  // %%%%%%%%%%%%%%%%%%%%%%%
+  // THIS IS YET TO COMPLETE
+  // %%%%%%%%%%%%%%%%%%%%%%%
+  // signup(
+  //       name: string, 
+  //       driverlicence: string,
+  //       email: string,
+  //       address: string,
+  //       driverphone: string,
+  //       carownerphone: string,
+  //       cartype: string,
+  //       carbrand: string,
+  //       carmodel: string,
+  //       caryear: string,
+  //       carplatenumber: string,
+  //       carcolor: string,
+  //       password: string
+  //   ) {
+  //     return this.http.post("54.179.188.118:5000/driver/register", {
+  //       fullname: name,
+  //       driverlicence: driverlicence,
+  //       email: email,
+  //       address: address,
+  //       phone: driverphone,
+  //       carownerphone: carownerphone,
+  //       carType: cartype,
+  //       carBrand: carbrand,
+  //       carModel: carmodel,
+  //       carYear: caryear,
+  //       carPlateNumber: carplatenumber,
+  //       carColor: carcolor,
+  //       password: password
+
+  //   })
+  // }
 
   onNextsignup() {
     if (!this.form.valid) {

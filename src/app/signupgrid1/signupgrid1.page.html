@@ -1,11 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Step 1 / 2 Complete</ion-title>
+    <ion-title>Step 1 and 2 Complete</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <form [formGroup]="form">
+  <form [formGroup]="form" (ngSubmit)="submitForm(form)">
 
 <h1 class="header-text">Kindly provide details below</h1>
 <ion-list>
@@ -24,7 +24,7 @@
     <ion-label class="label" position="floating">Driver License</ion-label>
     <ion-input
       type="number" 
-      formControlName="driverlicense"
+      formControlName="driverlicence"
     ></ion-input>
   </ion-item>
 
@@ -64,21 +64,86 @@
     ></ion-input>
   </ion-item>
 
+  <!-- STEP 2 OF 2 -->
+  <ion-item>
+    <ion-label class="label" position="floating">Car Type</ion-label>
+    <ion-input
+    type="text"
+    autocomplete 
+    autocorrect 
+    formControlName="cartype"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="label" position="floating">Car Brand(e.g Toyota, Mitsubishi, Honda)</ion-label>
+    <ion-input
+      type="text"
+      autocomplete 
+      autocorrect 
+      formControlName="carbrand"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="label" position="floating">Car Model (e.g Camry, civic)</ion-label>
+    <ion-input
+        type="text"
+        autocomplete 
+        autocorrect 
+        formControlName="carmodel"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="label" position="floating">Car Year</ion-label>
+    <ion-input
+    type="text"
+    autocomplete 
+    autocorrect 
+    formControlName="caryear"
+    ></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label class="label" position="floating">Car Plate Number</ion-label>
+    <ion-input
+      type="number" 
+      formControlName="carplatenumber"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="label" position="floating">Car Color(e.g silver, gold, black)</ion-label>
+    <ion-input
+        type="text"
+        autocomplete 
+        autocorrect 
+        formControlName="carcolor"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="label" position="floating">Password</ion-label>
+    <ion-input
+      type="password" 
+      formControlName="password"
+    ></ion-input>
+  </ion-item>
+
 </ion-list>
 
-<ion-grid class="label" style="position: fixed; padding:10px; bottom:5px; width:100%;">
+<ion-grid class="label" style="position: scroll; padding:10px; bottom:5px; width:100%;">
 
   <ion-row>
-    <button class="button" [routerLink]="['/signup']" (click)="onNextsignup()" [disabled]="!form.valid">Next</button>
+    <button class="button" [routerLink]="['/signup']" (click)="onNextsignup()" [disabled]="!form.valid">Submit</button>
     <p class="footer-text">Already have an Account?<span class="footer-link" [routerLink]="['/auth']">Sign In</span></p>
   </ion-row>
 
 </ion-grid>
 
   </form>
-
-    
-
 
 </ion-content>
 
@@ -108,12 +173,4 @@
 
 
 
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>signupgrid1</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-
-</ion-content> -->

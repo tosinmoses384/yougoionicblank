@@ -27,21 +27,21 @@
         <ion-row>
           <ion-item style="width:100%">
             <ion-label class="label" position="floating">Password</ion-label>
-            <ion-input [type]="passwordType" type="password" ngModel #passwordCtrl="ngModel" name="password" required minlength="6"></ion-input>
+            <ion-input [type]="passwordType"  type="password" ngModel #passwordCtrl="ngModel" name="password" required minlength="6"></ion-input>
             <ion-icon class="eye-icon" [name]="passwordIcon" (click)='hideShowPassword()' slot="end"></ion-icon>
           </ion-item>
-          <ion-item lines="none"><ion-label>Should atleast be 6 characters long.</ion-label></ion-item>
+          <ion-item *ngIf="!passwordCtrl.valid && passwordCtrl.touched" lines="none"><ion-label>Should atleast be 6 characters long.</ion-label></ion-item>
           <h4 class="reset-text">Forgot Password?</h4>
         </ion-row>
 
       </div>
 
-
       <ion-row>
         <div class="button-container">
-        <button 
+        
+        <button
           class="button" 
-          (click)="onLogin()" 
+           
           type="submit"
           [disabled]="!f.valid"
           

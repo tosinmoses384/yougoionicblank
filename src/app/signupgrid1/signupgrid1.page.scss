@@ -1,3 +1,7 @@
+ion-content form {
+  overflow: scroll;
+}
+
 .image-container{
     width:100%;
     text-align:center;
@@ -73,3 +77,8 @@
     max-width: 345px;
     padding-left: 1rem;
   }
+
+  // form ion-list {
+  //   border: 1px dashed red;
+  //    overflow: scroll;
+  // }
